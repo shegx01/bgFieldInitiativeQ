@@ -93,6 +93,8 @@ h6 {
         display: flex;
 
         &--item {
+            white-space: nowrap;
+
 
             &:not(:last-child) {
                 margin-right: 3rem;
@@ -262,8 +264,9 @@ h6 {
 
 // Mobile Menu Section
 
-.show-mobile {
-    display: flex;
+
+.mobile-menu {
+    display: none;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -273,9 +276,6 @@ h6 {
     background-color: #fff;
     z-index: 1000;
     flex-direction: column;
-}
-
-.mobile-menu {
 
     &__heading {
         padding: 1.8rem 2.5rem;
@@ -408,6 +408,10 @@ h6 {
         }
     }
 }
+.show-mobile {
+    display: flex;
+}
+
 
 // Hero Section
 

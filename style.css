@@ -106,6 +106,10 @@ h6 {
   display: flex;
 }
 
+.nav__menu--item {
+  white-space: nowrap;
+}
+
 .nav__menu--item:not(:last-child) {
   margin-right: 3rem;
 }
@@ -303,10 +307,8 @@ h6 {
   background: -webkit-linear-gradient(240deg, #7813fe, #4536fe);
 }
 
-.show-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.mobile-menu {
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -486,6 +488,12 @@ h6 {
   line-height: 1;
   display: inline-block;
   vertical-align: middle;
+}
+
+.show-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero {
